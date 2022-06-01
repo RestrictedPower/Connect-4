@@ -99,4 +99,5 @@ function updatePage(slot, color, dropPos){
   animate(img, 0, (startX + dropPos*delta), (startY + slot*delta));
 }
 
-newGame();
+setTimeout(() => { newGame(); }, 2000);
+
