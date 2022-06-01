@@ -1,0 +1,61 @@
+html{
+  background-color: gray;
+}
+
+#boardPanel{
+  position: relative;
+  width: 855px;
+  height: 1185px; /* 50 + 735 + 100 + 300(piechart)*/
+  overflow: hidden;
+  float: left;
+}
+
+.menu{
+  text-align: center;
+  float: left;
+  width: 30%;
+  margin-right: 10px;
+}
+
+.imgPanel{
+  position: relative;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  width: 855px;
+  height: 735px;
+}
+
+#buttonPanel{
+  height: 50px;
+  width: 855px;
+  left: 0px;
+  top: 0px;
+}
+
+#infoConsole{
+    height: 100px;
+    width: 855px;
+    background: WHITE; /* This ruins default border */
+    border: 3px solid black ;
+    font-size: 20px;
+    resize: none;
+    margin-right:
+}
+
+.dropButton{
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 7px;
+}
+
+.blinking{
+    animation: blinkingMark 1.2s infinite;
+}
+
+@keyframes blinkingMark{
+    0%{    opacity: 1;    }
+    45%{  opacity: 0;     }
+    55%{  opacity: 0;     }
+    100%{  opacity: 1;    }
+}
