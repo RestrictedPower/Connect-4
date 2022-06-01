@@ -98,3 +98,5 @@ function updatePage(slot, color, dropPos){
   panel.appendChild(img);
   animate(img, 0, (startX + dropPos*delta), (startY + slot*delta));
 }
+
+newGame();
